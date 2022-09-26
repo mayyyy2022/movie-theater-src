@@ -20,7 +20,7 @@ public class Reservation {
         return showSchedule.getMovie().getTicketPrice() - getDiscount(showSchedule.getSequenceOfTheDay());
     }
 
-    private double getDiscount(int showSequence) {
+    public double getDiscount(int showSequence) {
         double maxDiscount = 0;
         // in case there will be more special discount in the future
         switch(showSchedule.getMovie().getSpecialCode()) {
